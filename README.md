@@ -5,6 +5,8 @@ There are however, iCal links available that you can subscribe to and see the li
 
 My friend that I train with regulary doesn't have an Apple device so I created this website so that users can view the bookings and there is also button that directs the user to the studio booking form.
 
+Website can be viewed [here](http://sms154.pythonanywhere.com/)
+
 ## Features: 
 - Google Calendar API
 - [FullCalendar](https://fullcalendar.io/)
