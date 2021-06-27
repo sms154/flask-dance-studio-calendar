@@ -8,4 +8,4 @@ My friend that I train with regulary doesn't have an Apple device so I created t
 ## Features: 
 - Google Calendar API
 - [FullCalendar](https://fullcalendar.io/)
-- Bootstrap# flask-dance-studio-booking
+- Bootstrap
