@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/main.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/main.min.js"></script>
+
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.css' rel='stylesheet' />
+    <link href='https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.1/css/all.css' rel='stylesheet'>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+    <div class="container-fluid mt-4">
+        <h1 class="text-center">Salsa Latina Dance Studio Bookings</h1>
+        <input id="api_key" value="{{ api_key }}" type="hidden" />
+        <div class="row mt-4 mb-4">
+            <div class="col">
+                <button class="btn btn-sm" style="background-color: rgb(255,70,68); color: white;">Studio 1</button>
+                <button class="btn btn-sm" style="background-color: rgb(179,157,219); color: white;">Studio 2</button>
+                <button class="btn btn-sm" style="background-color: rgb(125,179,65); color: white;">Studio 3</button>
+            </div>
+            <div class="col">
+                <a class="btn btn-primary float-right" href="https://www.salsalatina.nz/studio-hire#comp-k9rrh7ah" target="_blank">Book Studio</a>
+            </div>
+        </div>
+            
+
+        <div id="calendar"></div>
+        <script>
+            let hiddenInput = document.getElementById("api_key");
+            let api = hiddenInput.value;
+            
+            let calendarEl = document.getElementById('calendar');
+
+            let calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'timeGridWeek',
+                firstDay: 1,
+                allDaySlot: false,
+                nowIndicator: true,
+                stickyHeaderDates: true,
+                themeSystem: 'bootstrap',
+                plugin: [ 'googleCalendarPlugin'],
+                googleCalendarApiKey: api,
+                eventSources: [
+                {
+                    googleCalendarId: 'qg02h8aj4pk8o3uq8va9eus9t87aj15a@import.calendar.google.com',
+                    color: 'rgb(255,70,68)',
+                    textColor: 'white'
+                },
+                {
+                    googleCalendarId: 'neju4ip101stm5o9cabf2hncrvu53rmi@import.calendar.google.com',
+                    color: 'rgb(179,157,219)',
+                    textColor: 'white'
+                },
+                {
+                    googleCalendarId: '2ft8fquno8qlk3hv8r0gvp0up0ievege@import.calendar.google.com',
+                    color: 'rgb(125,179,65)',
+                    textColor: 'white'
+                }
+                ]
+            });
+
+            calendar.render();
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+.fc-media-screen .fc-timegrid-now-indicator-container {
+    position: unset;
+  }
+  
+  .fc .fc-timegrid-now-indicator-line {
+    border-bottom-width: 1px; 
+    border-top-width: 1px;
+    border-color: rgb(255,206,59);
+    background-color: rgb(255,206,59);
+  }
+  
+  /* // Day view */
+  .fc-resourceTimeGridDay-view  .fc-timegrid-now-indicator-arrow {
+    position: absolute;
+    border: none;
+    left: unset;
+    right: -6px;
+    width: 12px;
+    height: 12px;
+    background-color: rgb(255,206,59);
+    border-radius: 50%;
+  }
+    
+  /* // Week view */
+  .fc-timeGridWeek-view .fc-timegrid-now-indicator-arrow {
+    display: none;
+  }
+  
+  .fc-timeGridWeek-view .fc-timegrid-now-indicator-line::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    width: 12px;
+    height: 12px;
+    background-color: rgb(255,206,59);
+    border-radius :50%;
+  }
