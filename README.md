@@ -7,7 +7,22 @@ My friend that I train with regulary doesn't have an Apple device so I created t
 
 Website can be viewed [here](http://sms154.pythonanywhere.com/)
 
-## Features: 
+## Languages used
+- Python
+- Javascript
+- CSS, Bootstrap
+- HTML
+
+## Technology used
 - Google Calendar API
 - [FullCalendar](https://fullcalendar.io/)
-- Bootstrap
+- PythonAnywhere
+
+## Lessons learned
+- Create a Google developers account and how to use the Google Calendar API key
+- Use FullCalendar
+- Deploy the site on PythonAnywhere and create .env file to store api key
+
+## Unsolved problems
+- Change the date format to DD/MM
+- Have the time now indicator displayed across the whole of the calendar instead of just the current day
