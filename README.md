@@ -18,6 +18,8 @@ My friend that I train with regulary doesn't have an Apple device so I created t
 ## Usage
 Link to deployed site [here](http://sms154.pythonanywhere.com/)
 
+![](./images/studio-calendar-preview.gif)
+
 ## Lessons learned
 - Create a Google developers account and how to use the Google Calendar API key
 - Use FullCalendar
